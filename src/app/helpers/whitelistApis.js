@@ -622,6 +622,14 @@ const API_LIST = {
       checksNeeded: ['ROLE_CHECK'],
       ROLE_CHECK: [ROLE.ADMIN]
     },
+    'learner/user/v1/block': {
+      checksNeeded: ['ROLE_CHECK'],
+      ROLE_CHECK: [ROLE.ADMIN]
+    },
+    'learner/user/v1/unblock': {
+      checksNeeded: ['ROLE_CHECK'],
+      ROLE_CHECK: [ROLE.ADMIN]
+    },
 
     // ORD related APIs
     'learner/org/v1/read': {
@@ -2077,7 +2085,9 @@ const API_LIST = {
     '/learner/notification/v1/feed/read/:uid',
     '/learner/course/v1/batch/participants/list',
     '/learner/org/v1/read',
-    'learner/org/v1/update'
+    'learner/org/v1/update',
+    'learner/user/v1/block',
+    'learner/user/v1/unblock'
   ]
 };
 module.exports = API_LIST;
