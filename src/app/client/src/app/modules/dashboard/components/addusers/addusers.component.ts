@@ -4691,7 +4691,6 @@ alert(e)
       }
     }
     this._httpService.userBlock(tempArray).subscribe(res => {
-      console.log('res',res);
       if (res.result.response == 'SUCCESS') {
         this.findUserId(userIds, 0)
         console.log('userIds',userIds);
@@ -4714,7 +4713,6 @@ alert(e)
       }
     }
     this._httpService.userUnBlock(tempArray).subscribe(res => {
-      console.log('res',res);
       if (res.result.response == 'SUCCESS') {
         this.findUserId(userIds, 1)
       }
